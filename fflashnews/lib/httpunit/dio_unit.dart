@@ -40,6 +40,7 @@ class DioUnit {
       successBlock(value.data);
     }).catchError((err) {
       _taskList.remove(_dio);
+      _dio.clear();
       failBlock(err);
     });
   }

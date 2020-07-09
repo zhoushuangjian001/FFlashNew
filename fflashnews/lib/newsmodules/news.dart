@@ -1,5 +1,6 @@
-import 'package:fflashnews/httpunit/dio_unit.dart';
 import 'package:fflashnews/newsmodules/headlines.dart';
+import 'package:fflashnews/newsmodules/nba.dart';
+import 'package:fflashnews/newsmodules/phone.dart';
 import 'package:flutter/material.dart';
 
 class NewsRouter extends StatefulWidget {
@@ -22,9 +23,6 @@ class _NewsRouter extends State<NewsRouter>
     _tabbarList = ["头条", "NBA", "手机", "移动互联", "娱乐", "时尚", "电影", "科技"];
     _tabController = TabController(length: _tabbarList.length, vsync: this);
     _tabController.addListener(() {});
-
-    DioUnit.instance.getRequest(
-        "/nc/article/headline/T1348647853363/0-20.html", (response) {});
   }
 
   @override
@@ -45,9 +43,20 @@ class _NewsRouter extends State<NewsRouter>
       ),
       body: TabBarView(
         controller: _tabController,
-        children: _tabbarList.map((e) {
-          return HeaderLines();
-        }).toList(),
+        children: _tabbarList.map(
+          (e) {
+            switch (e) {
+              case "NBA":
+                return NBAPage();
+                break;
+              case "手机":
+                return PhonePage();
+                break;
+              default:
+                return HeaderLines();
+            }
+          },
+        ).toList(),
       ),
     );
   }

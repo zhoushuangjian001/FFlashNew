@@ -38,12 +38,12 @@ class _RootTabBarController extends State<RootTabBarController> {
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Image.asset(
-              PathHandle.imagePath("tabbar_news.png"),
+              PathHandle.imagePath("tabbar_images/tabbar_news.png"),
               width: 26,
               height: 26,
             ),
             activeIcon: Image.asset(
-              PathHandle.imagePath("tabbar_news_hl.png"),
+              PathHandle.imagePath("tabbar_images/tabbar_news_hl.png"),
               width: 26,
               height: 26,
             ),
@@ -51,12 +51,12 @@ class _RootTabBarController extends State<RootTabBarController> {
           ),
           BottomNavigationBarItem(
             icon: Image.asset(
-              PathHandle.imagePath("tabbar_picture.png"),
+              PathHandle.imagePath("tabbar_images/tabbar_picture.png"),
               width: 26,
               height: 26,
             ),
             activeIcon: Image.asset(
-              PathHandle.imagePath("tabbar_picture_hl.png"),
+              PathHandle.imagePath("tabbar_images/tabbar_picture_hl.png"),
               width: 26,
               height: 26,
             ),
@@ -64,12 +64,12 @@ class _RootTabBarController extends State<RootTabBarController> {
           ),
           BottomNavigationBarItem(
             icon: Image.asset(
-              PathHandle.imagePath("tabbar_video.png"),
+              PathHandle.imagePath("tabbar_images/tabbar_video.png"),
               width: 26,
               height: 26,
             ),
             activeIcon: Image.asset(
-              PathHandle.imagePath("tabbar_video_hl.png"),
+              PathHandle.imagePath("tabbar_images/tabbar_video_hl.png"),
               width: 26,
               height: 26,
             ),
@@ -77,12 +77,12 @@ class _RootTabBarController extends State<RootTabBarController> {
           ),
           BottomNavigationBarItem(
             icon: Image.asset(
-              PathHandle.imagePath("tabbar_setting.png"),
+              PathHandle.imagePath("tabbar_images/tabbar_setting.png"),
               width: 26,
               height: 26,
             ),
             activeIcon: Image.asset(
-              PathHandle.imagePath("tabbar_setting_hl.png"),
+              PathHandle.imagePath("tabbar_images/tabbar_setting_hl.png"),
               width: 26,
               height: 26,
             ),

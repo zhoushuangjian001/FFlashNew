@@ -30,7 +30,8 @@ dependencies:
 
   # 网络
   dio: ^3.0.9
-
+  # 网络图片占位加载
+  transparent_image: ^1.0.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -48,6 +49,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/tabbar_images/
+    - assets/images/publics/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
   # For details regarding adding assets from package dependencies, see
